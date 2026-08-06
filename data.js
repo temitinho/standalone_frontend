@@ -184,7 +184,7 @@ const paintingsData = [
         "ID_Quadro": "204B",
         "Tamanho": "100cm X 100cm",
         "Material": "óleo s/ tela",
-        "Preço": "R$4.800,00",
+        "Preço": "vendido",
         "URL": "https://sites.google.com/view/artemiospaintings/trabalhos/204b",
         "Imagen_Local": "img/204B.jpg"
     },
