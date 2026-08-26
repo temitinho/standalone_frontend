@@ -457,5 +457,14 @@
         "Preço": "R$ 5.000,00",
         "URL": "https://sites.google.com/view/artemiospaintings/trabalhos/224b?authuser=0",
         "Imagen_Local": "img/224B.jpg"
+    },
+    {
+        "Categoria": "B",
+        "ID_Quadro": "225B",
+        "Tamanho": "50cm X70cm",
+        "Material": "óleo s/ tela",
+        "Preço": "R$3.000,00",
+        "URL": "https://sites.google.com/view/artemiospaintings/trabalhos/225b",
+        "Imagen_Local": "img/225B.jpg"
     }
 ]
