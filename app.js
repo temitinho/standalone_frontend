@@ -6,6 +6,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let allPaintings = []; // Local reference to the global data
 
+    function applyTheme() {
+        if (typeof themeConfig !== 'undefined' && themeConfig) {
+            if (themeConfig.accent_color) document.documentElement.style.setProperty('--accent-color', themeConfig.accent_color);
+            if (themeConfig.text_primary) document.documentElement.style.setProperty('--text-primary', themeConfig.text_primary);
+            if (themeConfig.text_secondary) document.documentElement.style.setProperty('--text-secondary', themeConfig.text_secondary);
+            if (themeConfig.bg_color) document.documentElement.style.setProperty('--bg-color', themeConfig.bg_color);
+            if (themeConfig.title_font_size) document.documentElement.style.setProperty('--title-font-size', themeConfig.title_font_size);
+            if (themeConfig.price_font_size) document.documentElement.style.setProperty('--price-font-size', themeConfig.price_font_size);
+            if (themeConfig.base_font_size) document.documentElement.style.setProperty('--base-font-size', themeConfig.base_font_size);
+        }
+    }
+
+    applyTheme();
+
     // Carregar dados consolidado do arquivo JSON local (estático)
     function initGallery() {
         if (typeof paintingsData !== 'undefined' && paintingsData.length > 0) {
@@ -35,7 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.className = 'painting-card';
             
-            const priceSectionHTML = `<p class="card-price">${painting.Preço}</p>`;
+            const customColor = (painting.Preco_Cor && painting.Preco_Cor.trim()) ? `color: ${painting.Preco_Cor};` : 'color: var(--accent-color);';
+            const customSize = (painting.Preco_Tamanho && painting.Preco_Tamanho.trim()) ? `font-size: ${painting.Preco_Tamanho};` : 'font-size: var(--price-font-size, 1.1rem);';
+
+            let priceSectionHTML = `<p class="card-price" style="font-weight: 600; margin-bottom: 5px; ${customColor} ${customSize}">${painting.Preço}</p>`;
 
             card.innerHTML = `
                 <div class="img-container">
@@ -45,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="card-content">
                     <h3>ID: ${painting.ID_Quadro}</h3>
                     ${priceSectionHTML}
-                    <p class="card-size">${painting.Tamanho}</p>
+                    <p class="card-size"><strong>Tamanho:</strong> ${painting.Tamanho || 'N/A'}</p>
+                    <p class="card-material" style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 3px;"><strong>Técnica:</strong> ${painting.Material || 'N/A'}</p>
                 </div>
             `;
             
@@ -77,7 +95,15 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('modal-title').innerText = `ID: ${painting.ID_Quadro}`;
         document.getElementById('modal-size').innerText = painting.Tamanho || 'N/A';
         document.getElementById('modal-material').innerText = painting.Material || 'N/A';
-        document.getElementById('modal-price').innerText = painting.Preço;
+        
+        const modalPrice = document.getElementById('modal-price');
+        modalPrice.innerText = painting.Preço;
+        modalPrice.style.color = (painting.Preco_Cor && painting.Preco_Cor.trim()) ? painting.Preco_Cor : 'var(--accent-color)';
+        if (painting.Preco_Tamanho && painting.Preco_Tamanho.trim()) {
+            modalPrice.style.fontSize = painting.Preco_Tamanho;
+        } else {
+            modalPrice.style.fontSize = '';
+        }
         
         // Exibir a imagem local (mesmo para o modal, para garantir estabilidade)
         document.getElementById('modal-image').src = "./" + painting.Imagen_Local.replace(/\\\\/g, '/');

@@ -15,7 +15,9 @@
         "Material": "acrílica s/ tela",
         "Preço": "R$1.100,00",
         "URL": "https://sites.google.com/view/artemios-paintings/trabalhos/102a",
-        "Imagen_Local": "img/102A.jpg"
+        "Imagen_Local": "img/102A.jpg",
+        "Preco_Cor": "#d4af37",
+        "Preco_Tamanho": ""
     },
     {
         "Categoria": "A",
@@ -24,7 +26,9 @@
         "Material": "acrílica s/ tela",
         "Preço": "vendido",
         "URL": "https://sites.google.com/view/artemios-paintings/trabalhos/103a",
-        "Imagen_Local": "img/103A.jpg"
+        "Imagen_Local": "img/103A.jpg",
+        "Preco_Cor": "#d43535",
+        "Preco_Tamanho": ""
     },
     {
         "Categoria": "A",
@@ -42,7 +46,9 @@
         "Material": "acrílica s/ tela",
         "Preço": "vendido",
         "URL": "https://sites.google.com/view/artemios-paintings/trabalhos/105a",
-        "Imagen_Local": "img/105A.jpg"
+        "Imagen_Local": "img/105A.jpg",
+        "Preco_Cor": "#d43535",
+        "Preco_Tamanho": ""
     },
     {
         "Categoria": "A",
@@ -105,7 +111,9 @@
         "Material": "acrílica s/ tela",
         "Preço": "vendido",
         "URL": "https://sites.google.com/view/artemios-paintings/trabalhos/112a",
-        "Imagen_Local": "img/112A.jpg"
+        "Imagen_Local": "img/112A.jpg",
+        "Preco_Cor": "#d43535",
+        "Preco_Tamanho": ""
     },
     {
         "Categoria": "A",
@@ -141,7 +149,9 @@
         "Material": "acrílica s/ tela",
         "Preço": "vendido",
         "URL": "https://sites.google.com/view/artemios-paintings/trabalhos/116a",
-        "Imagen_Local": "img/116A.jpg"
+        "Imagen_Local": "img/116A.jpg",
+        "Preco_Cor": "#d43535",
+        "Preco_Tamanho": ""
     },
     {
         "Categoria": "A",
@@ -186,7 +196,9 @@
         "Material": "óleo s/ tela",
         "Preço": "vendido",
         "URL": "https://sites.google.com/view/artemiospaintings/trabalhos/204b",
-        "Imagen_Local": "img/204B.jpg"
+        "Imagen_Local": "img/204B.jpg",
+        "Preco_Cor": "#d43535",
+        "Preco_Tamanho": ""
     },
     {
         "Categoria": "B",
@@ -204,7 +216,9 @@
         "Material": "acrílica s/ tela",
         "Preço": "vendido",
         "URL": "https://sites.google.com/view/artemiospaintings/trabalhos/206b",
-        "Imagen_Local": "img/206B.jpg"
+        "Imagen_Local": "img/206B.jpg",
+        "Preco_Cor": "#d43535",
+        "Preco_Tamanho": ""
     },
     {
         "Categoria": "B",
@@ -222,7 +236,9 @@
         "Material": "acrílica s/ tela",
         "Preço": "vendido",
         "URL": "https://sites.google.com/view/artemiospaintings/trabalhos/208b",
-        "Imagen_Local": "img/208B.jpg"
+        "Imagen_Local": "img/208B.jpg",
+        "Preco_Cor": "#d43535",
+        "Preco_Tamanho": ""
     },
     {
         "Categoria": "B",
@@ -258,7 +274,9 @@
         "Material": "acrílica s/ tela",
         "Preço": "vendido",
         "URL": "https://sites.google.com/view/artemiospaintings/trabalhos/212b",
-        "Imagen_Local": "img/212B.jpg"
+        "Imagen_Local": "img/212B.jpg",
+        "Preco_Cor": "#d43535",
+        "Preco_Tamanho": ""
     },
     {
         "Categoria": "B",
@@ -276,7 +294,9 @@
         "Material": "N/A",
         "Preço": "vendido",
         "URL": "https://sites.google.com/view/artemiospaintings/trabalhos/214b",
-        "Imagen_Local": "img/214B.jpg"
+        "Imagen_Local": "img/214B.jpg",
+        "Preco_Cor": "#d43535",
+        "Preco_Tamanho": ""
     },
     {
         "Categoria": "B",
@@ -294,7 +314,9 @@
         "Material": "acrílica s/ tela",
         "Preço": "vendido",
         "URL": "https://sites.google.com/view/artemiospaintings/trabalhos/216b",
-        "Imagen_Local": "img/216B.jpg"
+        "Imagen_Local": "img/216B.jpg",
+        "Preco_Cor": "#d43535",
+        "Preco_Tamanho": ""
     },
     {
         "Categoria": "B",
@@ -303,7 +325,9 @@
         "Material": "acrílica s/ tela",
         "Preço": "vendido",
         "URL": "https://sites.google.com/view/artemiospaintings/trabalhos/217b",
-        "Imagen_Local": "img/217B.jpg"
+        "Imagen_Local": "img/217B.jpg",
+        "Preco_Cor": "#d43535",
+        "Preco_Tamanho": ""
     },
     {
         "Categoria": "B",
@@ -384,7 +408,9 @@
         "Material": "acrílica s/ tela",
         "Preço": "vendido",
         "URL": "https://sites.google.com/view/artemio-pinturas-c/trabalhos/305c",
-        "Imagen_Local": "img/305C.jpg"
+        "Imagen_Local": "img/305C.jpg",
+        "Preco_Cor": "#d43535",
+        "Preco_Tamanho": ""
     },
     {
         "Categoria": "C",
