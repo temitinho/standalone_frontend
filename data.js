@@ -492,5 +492,16 @@ const paintingsData = [
         "Preço": "R$3.000,00",
         "URL": "https://sites.google.com/view/artemiospaintings/trabalhos/225b",
         "Imagen_Local": "img/225B.jpg"
+    },
+    {
+        "Categoria": "C",
+        "ID_Quadro": "310C",
+        "Tamanho": "100cm X 100cm cada tela",
+        "Material": "acrílica s/ tela",
+        "Preço": "R$3.000,00",
+        "URL": "https://sites.google.com/view/artemio-pinturas-c/trabalhos/310c?authuser=0",
+        "Imagen_Local": "img/310C.jpg",
+        "Preco_Cor": "#d4af37",
+        "Preco_Tamanho": ""
     }
 ];
