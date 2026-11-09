@@ -26,6 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
             allPaintings = paintingsData; 
             renderGallery(allPaintings);
             
+            const urlParams = new URLSearchParams(window.location.search);
+            const catParam = urlParams.get('cat');
+            if (catParam) {
+                const targetBtn = document.querySelector(`.filter-btn[data-category="${catParam}"]`);
+                if (targetBtn) {
+                    targetBtn.click();
+                    return;
+                }
+            }
             const activeBtn = document.querySelector('.filter-btn.active');
             if (activeBtn) activeBtn.click();
         } else {
@@ -68,7 +77,10 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             
             card.addEventListener('click', () => {
-                openModal(painting);
+                const activeBtn = document.querySelector('.filter-btn.active[data-category]');
+                const activeCat = activeBtn ? activeBtn.getAttribute('data-category') : 'all';
+                const catQuery = (activeCat && activeCat !== 'all') ? `&cat=${encodeURIComponent(activeCat)}` : '';
+                window.location.href = `quadro.html?id=${encodeURIComponent(painting.ID_Quadro)}${catQuery}`;
             });
             galleryGrid.appendChild(card);
         });
@@ -113,12 +125,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = 'hidden'; 
     }
 
-    // Lógica para Fechar o Modal
-    closeBtn.addEventListener('click', closeModal);
-    window.addEventListener('click', (e) => { e.target === modal && closeModal(); });
+    // Lógica para Fechar o Modal (se existir)
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    window.addEventListener('click', (e) => { if (modal && e.target === modal) closeModal(); });
 
     function closeModal() {
-        modal.classList.remove('active');
+        if (modal) modal.classList.remove('active');
         document.body.style.overflow = 'auto';
     }
 });

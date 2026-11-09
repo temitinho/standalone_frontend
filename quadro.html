@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obra | ARTEmio - Galeria Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-glow"></div>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <h1>ARTE<span>mio</span></h1>
+                <p>Galeria de Inventário Digital</p>
+            </a>
+        </div>
+
+        <nav class="painting-nav-bar">
+            <a id="back-to-gallery-btn" href="index.html" class="filter-btn" style="text-decoration: none;">
+                &larr; Voltar para a Galeria
+            </a>
+
+            <div class="nav-prev-next">
+                <a id="prev-painting-btn" href="#" class="filter-btn" style="text-decoration: none;">
+                    &larr; Anterior
+                </a>
+                <a id="next-painting-btn" href="#" class="filter-btn" style="text-decoration: none;">
+                    Próximo &rarr;
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="painting-page" class="painting-page-container">
+        <div id="painting-loader" class="loader">Carregando Obra...</div>
+
+        <div id="painting-showcase" class="painting-showcase" style="display: none;">
+            <div id="painting-image-wrapper" class="painting-showcase-image-wrapper" title="Clique para ampliar em tela cheia">
+                <img id="painting-image" src="" alt="Imagem do Quadro">
+                <div id="painting-category-badge" class="category-badge">---</div>
+                <div class="zoom-hint-badge">&#128269; Clique para ampliar</div>
+            </div>
+
+            <div class="painting-showcase-info">
+                <h2 id="painting-title">ID: ---</h2>
+                <p id="painting-category-subtitle" class="painting-showcase-subtitle">Categoria: ---</p>
+                <hr>
+
+                <div class="info-row">
+                    <span class="label">Código da Obra:</span>
+                    <span id="painting-id">---</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Tamanho:</span>
+                    <span id="painting-size">---</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Técnica / Material:</span>
+                    <span id="painting-material">---</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Preço:</span>
+                    <span id="painting-price" class="price-tag">---</span>
+                </div>
+
+                <div class="painting-actions-group">
+                    <button id="open-lightbox-btn" type="button" class="secondary-action-btn">
+                        &#128269; Ampliar em Tela Cheia
+                    </button>
+                    <a id="painting-external-link" href="#" target="_blank" rel="noopener noreferrer" class="view-original-btn">
+                        ver detalhes e vídeo
+                    </a>
+                </div>
+
+                <!-- Seção de Contato para Aquisição -->
+                <div class="contact-acquire-box">
+                    <h3>Adquirir esta Obra</h3>
+                    <p>Ficou interessado neste quadro? Entre em contato diretamente com o artista:</p>
+                    <div class="contact-details-list">
+                        <div><strong>WhatsApp:</strong> <a id="contact-whatsapp-text" href="https://wa.me/5521975370628" target="_blank" rel="noopener noreferrer">(21) 97537-0628</a></div>
+                        <div><strong>E-mail:</strong> <a id="contact-email-text" href="mailto:artemiofonseca@gmail.com">artemiofonseca@gmail.com</a></div>
+                    </div>
+                    <div class="contact-buttons-row">
+                        <a id="contact-whatsapp-btn" href="https://wa.me/5521975370628" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+                            &#128172; Chamar no WhatsApp
+                        </a>
+                        <a id="contact-email-btn" href="mailto:artemiofonseca@gmail.com" class="email-btn">
+                            &#9993; Enviar E-mail
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox de Zoom em Tela Cheia -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span id="lightbox-close" class="lightbox-close" title="Fechar (ESC)">&times;</span>
+        <div class="lightbox-img-wrapper">
+            <img id="lightbox-image" src="" alt="Quadro em Tela Cheia" title="Clique para aplicar/remover zoom">
+        </div>
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+
+    <footer>
+        <div class="footer-contact">
+            <span><strong>Contato &amp; Aquisição de Obras:</strong></span>
+            <span>&#128172; WhatsApp: <a href="https://wa.me/5521975370628" target="_blank" rel="noopener noreferrer">(21) 97537-0628</a></span>
+            <span>&#9993; E-mail: <a href="mailto:artemiofonseca@gmail.com">artemiofonseca@gmail.com</a></span>
+        </div>
+        <p>&copy; 2026 Artemio's Paintings - Catálogo de Inventário</p>
+    </footer>
+
+    <script src="theme.js"></script>
+    <script src="data.js"></script>
+    <script src="quadro.js"></script>
+</body>
+</html>
+
