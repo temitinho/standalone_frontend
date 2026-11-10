@@ -621,6 +621,89 @@ footer {
     transform: translateY(-2px);
 }
 
+/* Seção de Compartilhamento nas Redes Sociais */
+.social-share-box {
+    margin-top: 20px;
+    padding: 20px 22px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+}
+
+.social-share-box h3 {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.share-buttons-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 11px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-family: inherit;
+}
+
+.share-fb-btn {
+    background: #1877F2;
+    color: #ffffff;
+}
+
+.share-fb-btn:hover {
+    background: #1464cc;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(24, 119, 242, 0.4);
+}
+
+.share-ig-btn {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #ffffff;
+}
+
+.share-ig-btn:hover {
+    opacity: 0.92;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 39, 67, 0.4);
+}
+
+.share-copy-btn {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--glass-border);
+}
+
+.share-copy-btn:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.share-feedback-msg {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.83rem;
+    color: var(--accent-color);
+    text-align: center;
+    line-height: 1.4;
+}
+
 /* Rodapé com Informações de Contato */
 .footer-contact {
     margin-bottom: 14px;
@@ -734,6 +817,9 @@ footer {
         justify-content: space-between;
     }
     .contact-buttons-row {
+        grid-template-columns: 1fr;
+    }
+    .share-buttons-row {
         grid-template-columns: 1fr;
     }
     .logo-container h1 { font-size: 2rem; }

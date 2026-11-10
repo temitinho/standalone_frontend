@@ -119,6 +119,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (emailBtn) emailBtn.href = mailUrl;
         if (emailText) emailText.href = mailUrl;
 
+        // Configurar Compartilhamento nas Redes Sociais (Facebook, Instagram, Copiar Link)
+        setupSocialSharing(painting);
+
         const navList = (activeCategory && activeCategory !== 'all')
             ? allPaintings.filter(p => p.Categoria === activeCategory)
             : allPaintings;
@@ -155,6 +158,98 @@ document.addEventListener('DOMContentLoaded', () => {
 
         loader.style.display = 'none';
         showcase.style.display = 'grid';
+    }
+
+    function showShareFeedback(msg) {
+        const feedbackEl = document.getElementById('share-feedback-msg');
+        if (!feedbackEl) return;
+        feedbackEl.innerText = msg;
+        feedbackEl.style.display = 'block';
+        clearTimeout(feedbackEl._hideTimer);
+        feedbackEl._hideTimer = setTimeout(() => {
+            feedbackEl.style.display = 'none';
+        }, 5000);
+    }
+
+    function copyTextToClipboard(text) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            return navigator.clipboard.writeText(text);
+        }
+        return new Promise((resolve) => {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+            resolve();
+        });
+    }
+
+    function setupSocialSharing(painting) {
+        const shareUrl = window.location.protocol.startsWith('http')
+            ? new URL(`q/${encodeURIComponent(painting.ID_Quadro)}.html`, window.location.href).href
+            : window.location.href;
+        const shareTitle = `Quadro ${painting.ID_Quadro} | ARTEmio - Galeria Digital`;
+        const shareText = `Confira a obra ID ${painting.ID_Quadro} (${painting.Tamanho || ''} - ${painting.Material || ''} - ${painting.Preço || ''}) na Galeria ARTEmio!`;
+
+        const ogTitle = document.getElementById('og-title');
+        const ogDesc = document.getElementById('og-description');
+        const ogImg = document.getElementById('og-image');
+        if (ogTitle) ogTitle.setAttribute('content', shareTitle);
+        if (ogDesc) ogDesc.setAttribute('content', shareText);
+        if (ogImg) ogImg.setAttribute('content', new URL('./' + painting.Imagen_Local.replace(/\\/g, '/'), window.location.href).href);
+
+        const fbBtn = document.getElementById('share-facebook-btn');
+        if (fbBtn) {
+            const fbSharerUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(shareText)}`;
+            fbBtn.href = fbSharerUrl;
+            fbBtn.onclick = (e) => {
+                e.preventDefault();
+                copyTextToClipboard(`${shareText}\n${shareUrl}`).catch(() => {});
+                window.open(fbSharerUrl, 'facebook-share-dialog', 'width=626,height=436');
+                showShareFeedback('Abrindo o Facebook... (A legenda e o link também foram copiados caso queira colar no post!)');
+            };
+        }
+
+        const igBtn = document.getElementById('share-instagram-btn');
+        if (igBtn) {
+            igBtn.onclick = async () => {
+                const fullCaption = `${shareText}\n${shareUrl}`;
+                await copyTextToClipboard(fullCaption).catch(() => {});
+
+                if (navigator.share) {
+                    try {
+                        await navigator.share({
+                            title: shareTitle,
+                            text: shareText,
+                            url: shareUrl
+                        });
+                        return;
+                    } catch (err) {
+                        if (err && err.name === 'AbortError') return;
+                    }
+                }
+
+                showShareFeedback('Link e legenda copiados! Cole na sua publicação, Story ou Direct do Instagram.');
+                window.open('https://www.instagram.com/', '_blank', 'noopener,noreferrer');
+            };
+        }
+
+        const copyBtn = document.getElementById('share-copy-link-btn');
+        if (copyBtn) {
+            copyBtn.onclick = async () => {
+                await copyTextToClipboard(shareUrl).catch(() => {});
+                const originalHTML = copyBtn.innerHTML;
+                copyBtn.innerHTML = '&#10004; Link Copiado!';
+                showShareFeedback(`Link copiado: ${shareUrl}`);
+                setTimeout(() => {
+                    copyBtn.innerHTML = originalHTML;
+                }, 2500);
+            };
+        }
     }
 
     function openLightbox() {
