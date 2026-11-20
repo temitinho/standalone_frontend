@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ? new URL(`q/${encodeURIComponent(painting.ID_Quadro)}.html`, window.location.href).href
             : window.location.href;
         const shareTitle = `Quadro ${painting.ID_Quadro} | ARTEmio - Galeria Digital`;
-        const shareText = `Confira a obra ID ${painting.ID_Quadro} (${painting.Tamanho || ''} - ${painting.Material || ''} - ${painting.Preço || ''}) na Galeria ARTEmio!`;
+        const shareText = `Confira a obra ID ${painting.ID_Quadro} (${painting.Tamanho || ''} - ${painting.Material || ''} - ${painting.Preço || ''}) na Galeria ARTEmio (@artemio_filho_)!`;
 
         const ogTitle = document.getElementById('og-title');
         const ogDesc = document.getElementById('og-description');
@@ -233,8 +233,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
 
-                showShareFeedback('Link e legenda copiados! Cole na sua publicação, Story ou Direct do Instagram.');
-                window.open('https://www.instagram.com/', '_blank', 'noopener,noreferrer');
+                showShareFeedback('Link e legenda copiados! Cole na sua publicação, Story ou Direct do Instagram (@artemio_filho_).');
+                window.open('https://www.instagram.com/artemio_filho_', '_blank', 'noopener,noreferrer');
             };
         }
 
