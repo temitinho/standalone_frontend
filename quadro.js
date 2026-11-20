@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 showShareFeedback('Link e legenda copiados! Cole na sua publicação, Story ou Direct do Instagram (@artemio_filho_).');
-                window.open('https://www.instagram.com/artemio_filho_', '_blank', 'noopener,noreferrer');
+                window.open('https://www.instagram.com/artemio_filho_/', '_blank', 'noopener,noreferrer');
             };
         }
 
