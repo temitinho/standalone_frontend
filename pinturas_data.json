@@ -747,5 +747,77 @@
         "Preço": "R$ 500,00",
         "URL": "https://sites.google.com/view/artemio-d/trabalhos/409d",
         "Imagen_Local": "img/409D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "410D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/410d",
+        "Imagen_Local": "img/410D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "411D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/411d",
+        "Imagen_Local": "img/411D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "412D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/412d",
+        "Imagen_Local": "img/412D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "413D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/413d",
+        "Imagen_Local": "img/413D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "414D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/414d",
+        "Imagen_Local": "img/414D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "415D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/415d",
+        "Imagen_Local": "img/415D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "416D",
+        "Tamanho": "80cm X 80cm",
+        "Material": "acrílica s/ tela",
+        "Preço": "R$ 990,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/416d",
+        "Imagen_Local": "img/416D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "417D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/417d",
+        "Imagen_Local": "img/417D.jpg"
     }
 ]
