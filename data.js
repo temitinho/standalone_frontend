@@ -633,7 +633,16 @@ const paintingsData = [
             "img/detalhes/119A_detail1.jpg",
             "img/detalhes/119A_detail2.jpg",
             "img/detalhes/119A_detail3.jpg"
-        ]
+        ],
+        "Textos_Curatoriais": {
+            "Nota_Autor": "Pessoas sentadas em uma ruela de algum vilarejo do Mediterrâneo, na mesa de um bar ao ar livre, duas figuras femininas tomando vinho e olhando no seu laptop.",
+            "Opcao_1_Poetica": "Em uma ruela acolhedora de um vilarejo do Mediterrâneo, o charme das mesas ao ar livre encontra o ritmo conectado da vida atual. Na obra 119A (Óleo sobre tela, 50cm × 80cm), duas figuras femininas degustam vinho tinto sob uma luz suave e dourada enquanto compartilham o olhar diante do laptop, unindo tradição, amizade e contemporaneidade.",
+            "Opcao_2_Direta": "Olá! Compartilho com você a obra original 119A (Óleo sobre tela, 50cm × 80cm). A pintura retrata o ambiente charmoso de um bar ao ar livre em uma ruela do Mediterrâneo, onde duas mulheres apreciam um bom vinho enquanto interagem diante de um laptop sob pinceladas quentes e luminosas.",
+            "Opcao_3_Stories": "Uma ruela do Mediterrâneo, taças de vinho ao ar livre e a sintonia contemporânea diante do laptop na obra original a óleo 119A (50cm × 80cm). Confira em tela cheia: https://artemio.netlify.app/quadro.html?id=119A",
+            "Option_1_EN": "Along a quiet lane in a Mediterranean village, the timeless charm of an open-air bistro meets the connected pulse of modern life. In original work 119A (Oil on canvas, 50cm × 80cm), two women savor red wine in soft golden light while sharing a moment around an open laptop—a warm dialogue between tradition, friendship, and contemporary living.",
+            "Option_2_EN": "Hello! I would love to share with you my original oil painting 119A (Oil on canvas, 50cm × 80cm). Set at an outdoor bar in a Mediterranean village alley, the scene captures two women enjoying red wine while looking at their laptop, painted in warm, expressive brushwork.",
+            "Option_3_EN": "Open-air wine in a Mediterranean village lane and modern connection captured in oil on canvas — explore original work 119A (50cm × 80cm): https://artemio.netlify.app/quadro.html?id=119A"
+        }
     },
     {
         "Categoria": "A",
@@ -647,6 +656,96 @@ const paintingsData = [
             "img/detalhes/120A_detail1.jpg",
             "img/detalhes/120A_detail2.jpg",
             "img/detalhes/120A_detail3.jpg"
-        ]
+        ],
+        "Textos_Curatoriais": {
+            "Nota_Autor": "Uma figura feminina degusta um café quente dentro de um bar aconchegante observando pela janela a rua com um tempo chuvoso.",
+            "Opcao_1_Poetica": "No refúgio acolhedor de um café iluminado por luzes douradas, uma figura feminina degusta seu café quente enquanto contempla pela vitrine o ritmo da rua em dia chuvoso. Na obra 120A (Óleo sobre tela, 50cm × 80cm), o contraste entre o calor amadeirado do interior e os tons azulados da chuva lá fora cria uma atmosfera de pausa, abrigo e poesia urbana.",
+            "Opcao_2_Direta": "Olá! Compartilho com você a obra original 120A (Óleo sobre tela, 50cm × 80cm). A pintura retrata uma mulher degustando um café quente dentro de um bar aconchegante enquanto observa pela janela o movimento da rua em tempo chuvoso, trabalhando um contraste muito bonito entre a luz quente interna e os tons frios da chuva.",
+            "Opcao_3_Stories": "O aconchego de um café quente diante da janela enquanto a chuva cai na rua lá fora: contraste de luz e serenidade na obra original a óleo 120A (50cm × 80cm). Confira: https://artemio.netlify.app/quadro.html?id=120A",
+            "Option_1_EN": "Inside the warm sanctuary of a golden-lit café, a woman savors a hot cup of coffee while gazing through the wide window at the rain-washed street outdoors. In original work 120A (Oil on canvas, 50cm × 80cm), the rich contrast between the cozy wooden interior and the cool slate tones of the rainy avenue evokes a timeless moment of quiet contemplation.",
+            "Option_2_EN": "Hello! I would love to share with you my original oil painting 120A (Oil on canvas, 50cm × 80cm). It depicts a woman enjoying a hot coffee inside an inviting bar while watching the rainy street through the window, contrasting warm amber interior light against cool rainy-day tones.",
+            "Option_3_EN": "Warm coffee indoors and a rainy street beyond the café window captured in expressive oil on canvas — explore original work 120A (50cm × 80cm): https://artemio.netlify.app/quadro.html?id=120A"
+        }
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "401D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/401d",
+        "Imagen_Local": "img/401D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "402D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/402d",
+        "Imagen_Local": "img/402D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "403D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/403d",
+        "Imagen_Local": "img/403D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "404D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/404d",
+        "Imagen_Local": "img/404D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "405D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/405d",
+        "Imagen_Local": "img/405D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "406D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/406d",
+        "Imagen_Local": "img/406D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "407D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/407d",
+        "Imagen_Local": "img/407D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "408D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/408d",
+        "Imagen_Local": "img/408D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "409D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/409d",
+        "Imagen_Local": "img/409D.jpg"
     }
 ];
