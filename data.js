@@ -469,9 +469,11 @@ const paintingsData = [
         "ID_Quadro": "304C",
         "Tamanho": "50cm X 60cm",
         "Material": "acrílica s/ eucatex",
-        "Preço": "R$1.000,00",
+        "Preço": "R$ 500,00",
         "URL": "https://sites.google.com/view/artemio-pinturas-c/trabalhos/304c",
-        "Imagen_Local": "img/304C.jpg"
+        "Imagen_Local": "img/304C.jpg",
+        "Preco_Cor": "#d4af37",
+        "Preco_Tamanho": ""
     },
     {
         "Categoria": "C",
