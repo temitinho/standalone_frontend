@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="background-glow"></div>
 
@@ -42,7 +44,8 @@
         <div id="painting-loader" class="loader">Carregando Obra...</div>
 
         <div id="painting-showcase" class="painting-showcase" style="display: none;">
-            <div id="painting-image-wrapper" class="painting-showcase-image-wrapper" title="Clique para ampliar em tela cheia">
+            <div id="painting-image-wrapper" class="painting-showcase-image-wrapper"
+                title="Clique para ampliar em tela cheia">
                 <img id="painting-image" src="" alt="Imagem do Quadro">
                 <div id="painting-category-badge" class="category-badge">---</div>
                 <div class="zoom-hint-badge">&#128269; Clique para ampliar</div>
@@ -70,11 +73,18 @@
                     <span id="painting-price" class="price-tag">---</span>
                 </div>
 
+                <!-- Miniaturas de Closes / Detalhes da Obra (quando disponíveis) -->
+                <div id="painting-details-section" class="painting-details-section" style="display: none;">
+                    <h3>Closes &amp; Detalhes da Obra</h3>
+                    <div id="painting-details-grid" class="painting-details-grid"></div>
+                </div>
+
                 <div class="painting-actions-group">
                     <button id="open-lightbox-btn" type="button" class="secondary-action-btn">
                         &#128269; Ampliar em Tela Cheia
                     </button>
-                    <a id="painting-external-link" href="#" target="_blank" rel="noopener noreferrer" class="view-original-btn">
+                    <a id="painting-external-link" href="#" target="_blank" rel="noopener noreferrer"
+                        class="view-original-btn">
                         ver detalhes e vídeo
                     </a>
                 </div>
@@ -84,12 +94,16 @@
                     <h3>Adquirir esta Obra</h3>
                     <p>Ficou interessado neste quadro? Entre em contato diretamente com o artista:</p>
                     <div class="contact-details-list">
-                        <div><strong>WhatsApp:</strong> <a id="contact-whatsapp-text" href="https://wa.me/5521975370628" target="_blank" rel="noopener noreferrer">(21) 97537-0628</a></div>
-                        <div><strong>Instagram:</strong> <a href="https://www.instagram.com/artemio_filho_/" target="_blank" rel="noopener noreferrer">@artemio_filho_</a></div>
-                        <div><strong>E-mail:</strong> <a id="contact-email-text" href="mailto:artemiofonseca@gmail.com">artemiofonseca@gmail.com</a></div>
+                        <div><strong>WhatsApp:</strong> <a id="contact-whatsapp-text" href="https://wa.me/5521975370628"
+                                target="_blank" rel="noopener noreferrer">(21) 97537-0628</a></div>
+                        <div><strong>Instagram:</strong> <a href="https://www.instagram.com/artemio_filho_/"
+                                target="_blank" rel="noopener noreferrer">@artemio_filho_</a></div>
+                        <div><strong>E-mail:</strong> <a id="contact-email-text"
+                                href="mailto:artemiofonseca@gmail.com">artemiofonseca@gmail.com</a></div>
                     </div>
                     <div class="contact-buttons-row">
-                        <a id="contact-whatsapp-btn" href="https://wa.me/5521975370628" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+                        <a id="contact-whatsapp-btn" href="https://wa.me/5521975370628" target="_blank"
+                            rel="noopener noreferrer" class="whatsapp-btn">
                             &#128172; Chamar no WhatsApp
                         </a>
                         <a id="contact-email-btn" href="mailto:artemiofonseca@gmail.com" class="email-btn">
@@ -102,13 +116,16 @@
                 <div class="social-share-box">
                     <h3>Compartilhar esta Obra</h3>
                     <div class="share-buttons-row">
-                        <a id="share-facebook-btn" href="#" target="_blank" rel="noopener noreferrer" class="share-btn share-fb-btn" title="Compartilhar no Facebook">
+                        <a id="share-facebook-btn" href="#" target="_blank" rel="noopener noreferrer"
+                            class="share-btn share-fb-btn" title="Compartilhar no Facebook">
                             Facebook
                         </a>
-                        <button id="share-instagram-btn" type="button" class="share-btn share-ig-btn" title="Compartilhar no Instagram">
+                        <button id="share-instagram-btn" type="button" class="share-btn share-ig-btn"
+                            title="Compartilhar no Instagram">
                             Instagram
                         </button>
-                        <button id="share-copy-link-btn" type="button" class="share-btn share-copy-btn" title="Copiar link direto deste quadro">
+                        <button id="share-copy-link-btn" type="button" class="share-btn share-copy-btn"
+                            title="Copiar link direto deste quadro">
                             &#128279; Copiar Link
                         </button>
                     </div>
@@ -130,8 +147,10 @@
     <footer>
         <div class="footer-contact">
             <span><strong>Contato &amp; Aquisição de Obras:</strong></span>
-            <span>&#128172; WhatsApp: <a href="https://wa.me/5521975370628" target="_blank" rel="noopener noreferrer">(21) 97537-0628</a></span>
-            <span>&#128248; Instagram: <a href="https://www.instagram.com/artemio_filho_/" target="_blank" rel="noopener noreferrer">@artemio_filho_</a></span>
+            <span>&#128172; WhatsApp: <a href="https://wa.me/5521975370628" target="_blank"
+                    rel="noopener noreferrer">(21) 97537-0628</a></span>
+            <span>&#128248; Instagram: <a href="https://www.instagram.com/artemio_filho_/" target="_blank"
+                    rel="noopener noreferrer">@artemio_filho_</a></span>
             <span>&#9993; E-mail: <a href="mailto:artemiofonseca@gmail.com">artemiofonseca@gmail.com</a></span>
         </div>
         <p>&copy; 2026 Artemio's Paintings - Catálogo de Inventário</p>
@@ -141,5 +160,5 @@
     <script src="data.js"></script>
     <script src="quadro.js"></script>
 </body>
-</html>
 
+</html>

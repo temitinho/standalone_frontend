@@ -103,6 +103,33 @@ document.addEventListener('DOMContentLoaded', () => {
             externalLink.style.display = 'none';
         }
 
+        // Renderizar miniaturas de closes/detalhes locais quando disponíveis
+        const detailsSection = document.getElementById('painting-details-section');
+        const detailsGrid = document.getElementById('painting-details-grid');
+        if (detailsSection && detailsGrid) {
+            detailsGrid.innerHTML = '';
+            if (Array.isArray(painting.Detalhes_Locais) && painting.Detalhes_Locais.length > 0) {
+                painting.Detalhes_Locais.forEach((detSrc, idx) => {
+                    const cleanSrc = './' + detSrc.replace(/\\/g, '/');
+                    const card = document.createElement('div');
+                    card.className = 'detail-thumb-card';
+                    card.title = `Clique para ampliar Detalhe ${idx + 1}`;
+                    card.innerHTML = `<img src="${cleanSrc}" alt="Detalhe ${idx + 1} - Quadro ${painting.ID_Quadro}" loading="lazy">`;
+                    card.addEventListener('click', () => {
+                        lightboxImage.src = cleanSrc;
+                        lightboxImage.classList.remove('zoomed');
+                        lightboxCaption.innerText = `Quadro ${painting.ID_Quadro} — Close / Detalhe ${idx + 1}`;
+                        lightboxModal.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    });
+                    detailsGrid.appendChild(card);
+                });
+                detailsSection.style.display = 'block';
+            } else {
+                detailsSection.style.display = 'none';
+            }
+        }
+
         // Configurar links de contato (WhatsApp e E-mail) com dados da obra
         const waMsg = `Olá Artemio! Tenho interesse no quadro ID ${painting.ID_Quadro} (${painting.Tamanho || ''} - ${painting.Preço || ''}).`;
         const waUrl = `https://wa.me/5521975370628?text=${encodeURIComponent(waMsg)}`;
