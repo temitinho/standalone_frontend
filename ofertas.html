@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas Especiais (Série D) | ARTEmio - Galeria Digital</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ofertas Especiais — Galeria ARTEmio">
+    <meta property="og:description" content="Seleção exclusiva de obras originais em oferta especial (Série D) por Artemio's Paintings.">
+    <meta property="og:image" content="img/401D.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <header>
+        <div class="logo-container">
+            <h1>ARTE<span>mio</span></h1>
+            <p>Seção Exclusiva de Ofertas — Série D</p>
+            <div class="header-contact">
+                <a href="https://wa.me/5521975370628" target="_blank" rel="noopener noreferrer">&#128172; WhatsApp: (21)
+                    97537-0628</a>
+                <span class="contact-divider">|</span>
+                <a href="https://www.instagram.com/artemio_filho_/" target="_blank" rel="noopener noreferrer">&#128248;
+                    Instagram: @artemio_filho_</a>
+                <span class="contact-divider">|</span>
+                <a href="mailto:artemiofonseca@gmail.com">&#9993; artemiofonseca@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-category="D">Ofertas Especiais (Série D)</button>
+        </div>
+    </header>
+
+    <main id="gallery-grid" class="gallery-grid">
+        <div class="loader">Carregando Ofertas...</div>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <span><strong>Contato &amp; Aquisição de Obras:</strong></span>
+            <span>&#128172; WhatsApp: <a href="https://wa.me/5521975370628" target="_blank"
+                    rel="noopener noreferrer">(21) 97537-0628</a></span>
+            <span>&#128248; Instagram: <a href="https://www.instagram.com/artemio_filho_/" target="_blank"
+                    rel="noopener noreferrer">@artemio_filho_</a></span>
+            <span>&#9993; E-mail: <a href="mailto:artemiofonseca@gmail.com">artemiofonseca@gmail.com</a></span>
+        </div>
+        <p>&copy; 2026 Artemio's Paintings - Seção Exclusiva de Ofertas</p>
+    </footer>
+
+    <script src="theme.js"></script>
+    <script src="data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const galleryGrid = document.getElementById('gallery-grid');
+
+            if (typeof themeConfig !== 'undefined' && themeConfig) {
+                if (themeConfig.accent_color) document.documentElement.style.setProperty('--accent-color', themeConfig.accent_color);
+                if (themeConfig.text_primary) document.documentElement.style.setProperty('--text-primary', themeConfig.text_primary);
+                if (themeConfig.text_secondary) document.documentElement.style.setProperty('--text-secondary', themeConfig.text_secondary);
+                if (themeConfig.bg_color) document.documentElement.style.setProperty('--bg-color', themeConfig.bg_color);
+                if (themeConfig.title_font_size) document.documentElement.style.setProperty('--title-font-size', themeConfig.title_font_size);
+                if (themeConfig.price_font_size) document.documentElement.style.setProperty('--price-font-size', themeConfig.price_font_size);
+                if (themeConfig.base_font_size) document.documentElement.style.setProperty('--base-font-size', themeConfig.base_font_size);
+            }
+
+            if (typeof paintingsData !== 'undefined' && Array.isArray(paintingsData)) {
+                const items = paintingsData.filter(p => p.Categoria === 'D');
+                galleryGrid.innerHTML = '';
+                if (items.length === 0) {
+                    galleryGrid.innerHTML = '<p class="no-results">Nenhuma oferta disponível no momento.</p>';
+                    return;
+                }
+                items.forEach(painting => {
+                    const card = document.createElement('div');
+                    card.className = 'painting-card';
+                    const customColor = (painting.Preco_Cor && painting.Preco_Cor.trim()) ? `color: ${painting.Preco_Cor};` : 'color: var(--accent-color);';
+                    const customSize = (painting.Preco_Tamanho && painting.Preco_Tamanho.trim()) ? `font-size: ${painting.Preco_Tamanho};` : 'font-size: var(--price-font-size, 1.1rem);';
+                    card.innerHTML = `
+                        <div class="img-container">
+                            <img src="./${painting.Imagen_Local.replace(/\\/g, '/')}" alt="Quadro ${painting.ID_Quadro}" loading="lazy">
+                            <div class="category-badge">${painting.Categoria}</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>ID: ${painting.ID_Quadro}</h3>
+                            <p class="card-price" style="font-weight: 600; margin-bottom: 5px; ${customColor} ${customSize}">${painting.Preço}</p>
+                            <p class="card-size"><strong>Tamanho:</strong> ${painting.Tamanho || 'N/A'}</p>
+                            <p class="card-material" style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 3px;"><strong>Técnica:</strong> ${painting.Material || 'N/A'}</p>
+                        </div>
+                    `;
+                    card.addEventListener('click', () => {
+                        window.location.href = `quadro.html?id=${encodeURIComponent(painting.ID_Quadro)}&cat=D`;
+                    });
+                    galleryGrid.appendChild(card);
+                });
+            } else {
+                galleryGrid.innerHTML = '<p class="error">Erro ao carregar as ofertas.</p>';
+            }
+        });
+    </script>
+</body>
+
+</html>

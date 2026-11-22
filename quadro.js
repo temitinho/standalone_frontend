@@ -21,7 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let prevUrl = null;
     let nextUrl = null;
 
-    if (activeCategory && activeCategory !== 'all') {
+    if (activeCategory === 'D') {
+        backBtn.href = 'ofertas.html';
+        backBtn.innerHTML = '&larr; Voltar para Ofertas';
+    } else if (activeCategory && activeCategory !== 'all') {
         backBtn.href = `index.html?cat=${encodeURIComponent(activeCategory)}`;
     } else {
         backBtn.href = 'index.html';
@@ -149,9 +152,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // Configurar Compartilhamento nas Redes Sociais (Facebook, Instagram, Copiar Link)
         setupSocialSharing(painting);
 
-        const navList = (activeCategory && activeCategory !== 'all')
-            ? allPaintings.filter(p => p.Categoria === activeCategory)
-            : allPaintings;
+        const effectiveCat = (activeCategory && activeCategory !== 'all')
+            ? activeCategory
+            : (painting.Categoria === 'D' ? 'D' : 'all');
+
+        if (effectiveCat === 'D') {
+            backBtn.href = 'ofertas.html';
+            backBtn.innerHTML = '&larr; Voltar para Ofertas';
+        }
+
+        const navList = (effectiveCat !== 'all')
+            ? allPaintings.filter(p => p.Categoria === effectiveCat)
+            : allPaintings.filter(p => p.Categoria !== 'D');
 
         const currentIndex = navList.findIndex(
             p => String(p.ID_Quadro).toLowerCase() === String(painting.ID_Quadro).toLowerCase()

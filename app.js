@@ -24,10 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function initGallery() {
         if (typeof paintingsData !== 'undefined' && paintingsData.length > 0) {
             allPaintings = paintingsData; 
-            renderGallery(allPaintings);
+            renderGallery(allPaintings.filter(p => p.Categoria !== 'D'));
             
             const urlParams = new URLSearchParams(window.location.search);
             const catParam = urlParams.get('cat');
+            if (catParam === 'D') {
+                window.location.replace('ofertas.html');
+                return;
+            }
             if (catParam) {
                 const targetBtn = document.querySelector(`.filter-btn[data-category="${catParam}"]`);
                 if (targetBtn) {
@@ -94,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const category = btn.getAttribute('data-category');
             if (category === 'all') {
-                renderGallery(allPaintings);
+                renderGallery(allPaintings.filter(p => p.Categoria !== 'D'));
             } else {
                 const filtered = allPaintings.filter(p => p.Categoria === category);
                 renderGallery(filtered);
