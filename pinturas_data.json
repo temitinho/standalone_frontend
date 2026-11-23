@@ -821,5 +821,59 @@
         "Preço": "R$ 500,00",
         "URL": "https://sites.google.com/view/artemio-d/trabalhos/417d",
         "Imagen_Local": "img/417D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "418D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/418d",
+        "Imagen_Local": "img/418D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "419D",
+        "Tamanho": "50cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/419d",
+        "Imagen_Local": "img/419D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "420D",
+        "Tamanho": "60cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/420d",
+        "Imagen_Local": "img/420D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "421D",
+        "Tamanho": "60cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/421d",
+        "Imagen_Local": "img/421D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "422D",
+        "Tamanho": "60cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/422d",
+        "Imagen_Local": "img/422D.jpg"
+    },
+    {
+        "Categoria": "D",
+        "ID_Quadro": "423D",
+        "Tamanho": "60cm X 60cm",
+        "Material": "acrílica s/ painel eucatex",
+        "Preço": "R$ 500,00",
+        "URL": "https://sites.google.com/view/artemio-d/trabalhos/423d",
+        "Imagen_Local": "img/423D.jpg"
     }
 ]
