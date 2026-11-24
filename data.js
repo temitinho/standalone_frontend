@@ -18,7 +18,7 @@ const paintingsData = [
         }
     },
     {
-        "Categoria": "A",
+        "Categoria": "D",
         "ID_Quadro": "102A",
         "Tamanho": "50cm X 70cm",
         "Material": "acrílica s/ tela",
@@ -117,7 +117,7 @@ const paintingsData = [
         "Imagen_Local": "img/110A.jpg"
     },
     {
-        "Categoria": "A",
+        "Categoria": "D",
         "ID_Quadro": "111A",
         "Tamanho": "50cm X 70cm",
         "Material": "acrílica s/ tela",
