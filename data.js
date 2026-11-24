@@ -46,7 +46,13 @@ const paintingsData = [
         "Material": "acrílica s/ tela",
         "Preço": "R$2.000,00",
         "URL": "https://sites.google.com/view/artemios-paintings/trabalhos/104a",
-        "Imagen_Local": "img/104A.jpg"
+        "Imagen_Local": "img/104A.jpg",
+        "Detalhes_Locais": [
+            "img/detalhes/104A_detail1.jpg",
+            "img/detalhes/104A_detail2.jpg",
+            "img/detalhes/104A_detail3.jpg",
+            "img/detalhes/104A_detail4.jpg"
+        ]
     },
     {
         "Categoria": "A",
@@ -93,7 +99,13 @@ const paintingsData = [
         "Material": "acrílica s/ tela",
         "Preço": "R$2.500,00",
         "URL": "https://sites.google.com/view/artemios-paintings/trabalhos/109a",
-        "Imagen_Local": "img/109A.jpg"
+        "Imagen_Local": "img/109A.jpg",
+        "Detalhes_Locais": [
+            "img/detalhes/109A_detail1.jpg",
+            "img/detalhes/109A_detail2.jpg",
+            "img/detalhes/109A_detail3.jpg",
+            "img/detalhes/109A_detail4.jpg"
+        ]
     },
     {
         "Categoria": "A",
@@ -399,7 +411,16 @@ const paintingsData = [
         "Material": "acrílica s/ tela",
         "Preço": "R$3.800,00",
         "URL": "https://sites.google.com/view/artemiospaintings/trabalhos/218b",
-        "Imagen_Local": "img/218B.jpg"
+        "Imagen_Local": "img/218B.jpg",
+        "Textos_Curatoriais": {
+            "Nota_Autor": "Paisagem urbana acinzentada num dia chuvoso, uma avenida com carros iluminados passando entre os casarões antigos.",
+            "Opcao_1_Poetica": "Sob a atmosfera acinzentada de um dia chuvoso, a avenida ganha vida com o brilho dos faróis que deslizam entre a arquitetura imponente dos casarões antigos. Na obra 218B (Acrílica sobre tela, 80cm × 100cm), os reflexos dourados dos veículos iluminados espelham-se no asfalto molhado, criando um contraste poético entre a memória histórica e o pulso urbano.",
+            "Opcao_2_Direta": "Olá! Compartilho com você a obra original 218B (Acrílica sobre tela, 80cm × 100cm). A pintura retrata uma paisagem urbana acinzentada em dia de chuva, onde uma avenida movimentada com carros iluminados serpenteia entre casarões antigos e edifícios históricos, destacando o reflexo vibrante dos faróis no asfalto molhado.",
+            "Opcao_3_Stories": "Paisagem urbana chuvosa em tons acinzentados: faróis acesos refletidos no asfalto molhado entre casarões antigos na obra original 218B (Acrílica sobre tela, 80cm × 100cm). Confira em tela cheia: https://artemio.netlify.app/quadro.html?id=218B",
+            "Option_1_EN": "Beneath the silvery-grey atmosphere of a rainy day, the city avenue comes alive as illuminated vehicles glide between the stately facades of historic mansions. In original work 218B (Acrylic on canvas, 80cm × 100cm), warm headlights shimmer across the rain-slicked pavement in a poetic dialogue of architectural memory and urban motion.",
+            "Option_2_EN": "Hello! I would love to share with you my original painting 218B (Acrylic on canvas, 80cm × 100cm). This piece captures a grey, rain-washed urban landscape where an avenue of glowing cars passes between old historic mansions, contrasting cool slate tones with warm golden reflections on the wet street.",
+            "Option_3_EN": "Glowing headlights mirrored on a rainy avenue framed by historic old mansions — explore original acrylic painting 218B (80cm × 100cm): https://artemio.netlify.app/quadro.html?id=218B"
+        }
     },
     {
         "Categoria": "B",
